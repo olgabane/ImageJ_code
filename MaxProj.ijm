@@ -18,6 +18,7 @@ for(i = 0; i < TitleList.length; i++){
 	directory = "/Users/Olga/Desktop/Processed/";
 	color = "MaxProj_GFP";
 	saveAs("Tiff", directory + Title + color);
+	close();
 
 	selectWindow(Title);
 	Stack.setActiveChannels("010");
@@ -25,6 +26,7 @@ for(i = 0; i < TitleList.length; i++){
 	run("Stack to RGB");
 	color = "MaxProj_repo";
 	saveAs("Tiff", directory + Title + color);
+	close();
 
 	selectWindow(Title);
 	Stack.setActiveChannels("001");
@@ -32,4 +34,5 @@ for(i = 0; i < TitleList.length; i++){
 	run("Stack to RGB");
 	color = "MaxProj_HRP";
 	saveAs("Tiff", directory + Title + color);
+	close();
 }
